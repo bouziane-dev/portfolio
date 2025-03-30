@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: theme('colors.primary');
+  overflow-x: hidden;
+}
+
+#hero-image img {
+  max-width: none !important;
+}
+
+@media (min-width: 1024px) {
+  html {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+/* @media (min-width: 768px) and (max-width: 1182px) {
+  #hero-image {
+    top: -1.5rem;
+    right: -1rem;
+  }
+} */
