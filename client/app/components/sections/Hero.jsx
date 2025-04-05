@@ -1,14 +1,14 @@
 import React from 'react'
-import Button from '../ui/Button'
+import Button from '../ui/button'
 
 const Hero = () => {
   return (
-    <section className='relative mb-12 pt-[120px] md:mb-24 md:pt-16'>
+    <section id='hero' className='relative mb-12 pt-[80px] md:mb-24 md:pt-16'>
       {/* Mobile layout */}
       <div className='block md:hidden'>
         <div id='hero-text' className='mb-8 px-12'>
           <h2 className='my-4 text-2xl font-semibold text-white'>
-            <span className='animate-gradient bg-gradient-to-r from-[#13ADC7] via-[#6978D1] to-[#945DD6] bg-200% bg-clip-text text-transparent'>
+            <span className='animate-gradient bg-gradient-to-r from-blue via-purple to-violet bg-200% bg-clip-text text-transparent'>
               Hello, I'm Rahim,
             </span>{' '}
             <br></br>A Web Developer
@@ -40,7 +40,6 @@ const Hero = () => {
           ></img>
           <Button
             text={'Download CV'}
-            onClick={''}
             className={'absolute left-12 top-56 z-40'}
           />
         </div>
@@ -49,24 +48,26 @@ const Hero = () => {
       {/* Desktop layout */}
       <div className='relative hidden w-full items-center justify-between px-12 md:flex'>
         <div id='hero-text' className='relative z-10 mt-14 flex-1'>
-          <h2 className='my-6 text-5xl/relaxed font-semibold text-white'>
-            <span className='animate-gradient bg-gradient-to-r from-[#13ADC7] via-[#6978D1] to-[#945DD6] bg-200% bg-clip-text text-transparent'>
+          <h2 className='my-6 text-4xl/relaxed font-semibold text-white'>
+            <span className='animate-gradient bg-gradient-to-r from-blue via-purple to-violet bg-200% bg-clip-text text-transparent'>
               Hello, I'm Rahim,
             </span>
             <br />A Web Developer
           </h2>
-          <p className='my-6 text-sm text-lightgray'>
-            Former digital-marketing specialist, seeking to apply competent
+          <p
+            id='desktop-hero-text'
+            className='my-6 text-sm text-lightgray md:w-[25rem] lg:w-auto'
+          >
+            Giving your online presence a boost with a responsive modern website
             <br />
-            development skills with focus on collaboration, communication, and
-            passion.
+            From a clean frontend to a solid backend , I got you covered
           </p>
-          <Button text='Download CV' onClick={''} className='my-6' />
+          <Button text='Download CV' className='my-6' />
         </div>
 
         <div
           id='hero-image'
-          className='absolute right-28 top-0 h-[500px] w-[500px] overflow-visible'
+          className='absolute h-[500px] w-[500px] overflow-visible md:right-0 md:top-[-2rem] lg:right-12 lg:top-0'
         >
           <img
             src='Hero-ellipse.svg'

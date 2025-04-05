@@ -17,16 +17,43 @@ const Header = () => {
               MyPortfolio
             </a>
 
-            {/* Social Media Icons */}
+            {/* Social Media Icons - Mobile */}
             <div className='flex space-x-4'>
-              <a href='#' className='text-white hover:text-blue-500'>
-                <FontAwesomeIcon icon={faLinkedin} size='xl' />
+              <a
+                href='https://www.linkedin.com/in/bouziane-abderahim-dev/'
+                className='text-white'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  size='xl'
+                  className='transition duration-200 hover:text-purple hover:drop-shadow-[0_0_10px_#13ADC7] active:text-[#0a6c85]'
+                />
               </a>
-              <a href='#' className='text-white hover:text-gray-800'>
-                <FontAwesomeIcon icon={faGithub} size='xl' />
+              <a
+                href='https://github.com/bouziane-dev'
+                className='text-white'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  size='xl'
+                  className='transition duration-200 hover:text-purple hover:drop-shadow-[0_0_10px_#13ADC7] active:text-[#0a6c85]'
+                />
               </a>
-              <a href='#' className='text-white hover:text-blue-400'>
-                <FontAwesomeIcon icon={faInstagram} size='xl' />
+              <a
+                href='https://www.instagram.com/bouzi_codes/'
+                className='text-white'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  size='xl'
+                  className='transition duration-200 hover:text-purple hover:drop-shadow-[0_0_10px_#13ADC7] active:text-[#0a6c85]'
+                />
               </a>
             </div>
           </div>
@@ -34,17 +61,26 @@ const Header = () => {
           {/* Mobile Layout (Row 2): Nav Links */}
           <ul className='flex flex-row justify-between py-5 md:hidden'>
             <li>
-              <a href='#about' className='text-sm hover:text-blue-600'>
+              <a
+                href='#projects'
+                className='text-sm duration-300 hover:text-purple'
+              >
                 Projects
               </a>
             </li>
             <li>
-              <a href='#projects' className='text-sm hover:text-blue-600'>
+              <a
+                href='#tech'
+                className='text-sm duration-300 hover:text-purple'
+              >
                 Technologies
               </a>
             </li>
             <li>
-              <a href='#contact' className='text-sm hover:text-blue-600'>
+              <a
+                href='#about'
+                className='text-sm duration-300 hover:text-purple'
+              >
                 About me
               </a>
             </li>
@@ -59,32 +95,68 @@ const Header = () => {
             {/* Nav Links */}
             <ul className='flex space-x-6 text-base'>
               <li>
-                <a href='#about' className='hover:text-blue-600'>
+                <a
+                  href='#projects'
+                  className='text-sm font-medium duration-300 hover:text-purple'
+                >
                   Projects
                 </a>
               </li>
               <li>
-                <a href='#projects' className='hover:text-blue-600'>
+                <a
+                  href='#tech'
+                  className='text-sm font-medium duration-300 hover:text-purple'
+                >
                   Technologies
                 </a>
               </li>
               <li>
-                <a href='#contact' className='hover:text-blue-600'>
+                <a
+                  href='#about'
+                  className='text-sm font-medium duration-300 hover:text-purple'
+                >
                   About me
                 </a>
               </li>
             </ul>
 
-            {/* Social Media Icons */}
+            {/* Social Media Icons - Desktop */}
             <div className='bg-dark flex space-x-4'>
-              <a href='#' className='text-white hover:text-blue-500'>
-                <FontAwesomeIcon icon={faLinkedin} size='xl' />
+              <a
+                href='https://www.linkedin.com/in/bouziane-abderahim-dev/'
+                className='text-white'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  size='xl'
+                  className='transition duration-200 hover:text-purple hover:drop-shadow-[0_0_10px_#13ADC7] active:text-[#0a6c85]'
+                />
               </a>
-              <a href='#' className='text-white hover:text-gray-800'>
-                <FontAwesomeIcon icon={faGithub} size='xl' />
+              <a
+                href='https://github.com/bouziane-dev'
+                className='text-white'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  size='xl'
+                  className='transition duration-200 hover:text-purple hover:drop-shadow-[0_0_10px_#13ADC7] active:text-[#0a6c85]'
+                />
               </a>
-              <a href='#' className='text-white hover:text-blue-400'>
-                <FontAwesomeIcon icon={faInstagram} size='xl' />
+              <a
+                href='https://www.instagram.com/bouzi_codes/'
+                className='text-white'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  size='xl'
+                  className='transition duration-200 hover:text-purple hover:drop-shadow-[0_0_10px_#13ADC7] active:text-[#0a6c85]'
+                />
               </a>
             </div>
           </div>

@@ -1,12 +1,12 @@
 import React from 'react'
-import Header from './components/layout/Header'
-import Hero from './components/sections/Hero'
-import Projects from './components/sections/Projects'
-import Technologies from './components/sections/Technologies'
-import AboutMe from './components/sections/Aboutme'
-import Footer from './components/layout/Footer'
+import Header from './components/layout/header'
+import Hero from './components/sections/hero'
+import Projects from './components/sections/projects'
+import Technologies from './components/sections/technologies'
+import AboutMe from './components/sections/aboutMe'
+import Footer from './components/layout/footer'
 
-const Home = () => {
+const page = () => {
   return (
     <section className='py-2'>
       <div className='container'>
@@ -21,4 +21,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default page

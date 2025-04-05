@@ -1,10 +1,10 @@
 import React from 'react'
-import IconSVG from '../ui/IconSVG'
+import IconSVG from '../ui/iconSVG'
 
 const Technologies = () => {
   return (
-    <section className='mt-20 px-3 py-2 md:mt-32'>
-      <h2 className='mb-8 pl-3 text-xl font-medium text-white md:text-3xl'>
+    <section id='tech' className='mt-20 px-3 py-2 md:mt-32'>
+      <h2 className='mb-14 pl-3 text-lg font-medium text-white md:text-xl'>
         Technologies
       </h2>
       <div className='grid grid-cols-3 gap-3 md:grid-cols-6'>

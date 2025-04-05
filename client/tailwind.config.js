@@ -8,12 +8,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#1a1a2e',
-        lightgray: '#929EB0'
+        primary: '#0F1624',
+        lightgray: '#929EB0',
+        violet: '#945DD6',
+        blue: '#13ADC7',
+        purple: '#6978D1'
+      },
+      dropShadow: {
+        glow: '0 0 8px rgba(96, 165, 250, 0.8)'
       },
       backgroundSize: {
         '200%': '200% auto'
       },
+
       keyframes: {
         gradientFlow: {
           '0%': { backgroundPosition: '0% 50%' },

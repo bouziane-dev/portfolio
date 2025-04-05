@@ -17,10 +17,54 @@ body {
   max-width: none !important;
 }
 
+@keyframes glowEffect {
+  0% {
+    text-shadow:
+      0 0 5px #00ffcc,
+      0 0 10px #00ffcc;
+  }
+  50% {
+    text-shadow:
+      0 0 10px #9900ff,
+      0 0 15px #9900ff;
+  }
+  100% {
+    text-shadow:
+      0 0 5px #0055ff,
+      0 0 10px #0055ff;
+  }
+}
+
+.animate-glow {
+  animation: glowEffect 4s infinite alternate;
+}
+
 @media (min-width: 1024px) {
   html {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  #desktop-hero-text {
+    width: 27rem !important;
+  }
+}
+
+@media (min-width: 520px) and (max-width: 768px) {
+  #hero-image {
+    left: 8rem !important;
+  }
+  #ellipse {
+    width: 28rem !important;
+    height: 20rem !important;
+  }
+  #avatar {
+    left: 3.5rem !important;
+  }
+  #circle {
+    left: 11rem !important;
   }
 }
 
