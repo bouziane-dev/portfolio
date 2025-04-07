@@ -1,24 +1,8 @@
+import events from '@/app/data/events'
 import React from 'react'
 
 const AboutMe = () => {
-  const events = [
-    {
-      year: '2012',
-      text: 'Graduated KTC (Krasnodar Technical College) lorem ipsum dolor'
-    },
-    {
-      year: '2016',
-      text: 'Underwent a digital marketing course dkkas kasdkjasdkjd asduaskd ksdakdaksd kashdka'
-    },
-    {
-      year: '2021',
-      text: 'Became more interested in IT and programming skhdk askhdkas asdkhaskd kuahdkuhas'
-    },
-    {
-      year: '2022',
-      text: 'Worked on frontend development daskjdasjd sakjd ajsdlja sakdjalj sakdla kdsajdlja asidhlajs djsaldj daksjdlkj'
-    }
-  ]
+  const timelineEvents = events
 
   return (
     <section id='about' className='mt-20 px-3 py-2 md:mt-32'>
@@ -29,10 +13,10 @@ const AboutMe = () => {
       <div>
         <div className='relative hidden w-full items-start md:flex'>
           <div className='relative hidden w-full items-start justify-center gap-x-8 md:flex md:gap-x-16'>
-            {/* Horizontal Line */}
+            {/* Horizontal timline for desktop */}
             <div className='absolute left-0 top-10 h-0.5 w-full bg-white'></div>
 
-            {events.map((event, index) => (
+            {timelineEvents.map((event, index) => (
               <div
                 key={index}
                 className='relative flex min-w-[120px] flex-col items-center'
@@ -48,7 +32,7 @@ const AboutMe = () => {
                 </div>
 
                 {/* Text Content - Responsive Spacing */}
-                <p className='mt-4 text-start text-base leading-relaxed text-gray-400'>
+                <p className='mt-4 text-start text-sm leading-relaxed text-gray-400'>
                   {event.text}
                 </p>
               </div>

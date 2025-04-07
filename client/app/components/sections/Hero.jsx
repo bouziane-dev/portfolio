@@ -48,7 +48,7 @@ const Hero = () => {
       {/* Desktop layout */}
       <div className='relative hidden w-full items-center justify-between px-12 md:flex'>
         <div id='hero-text' className='relative z-10 mt-14 flex-1'>
-          <h2 className='my-6 text-4xl/relaxed font-semibold text-white'>
+          <h2 className='my-6 text-4xl/relaxed font-semibold text-white lg:text-[40px]/relaxed'>
             <span className='animate-gradient bg-gradient-to-r from-blue via-purple to-violet bg-200% bg-clip-text text-transparent'>
               Hello, I'm Rahim,
             </span>
@@ -56,9 +56,9 @@ const Hero = () => {
           </h2>
           <p
             id='desktop-hero-text'
-            className='my-6 text-sm text-lightgray md:w-[25rem] lg:w-auto'
+            className='my-6 text-sm text-lightgray md:w-[25rem] lg:w-auto lg:text-base'
           >
-            Giving your online presence a boost with a responsive modern website
+            Giving your online presence a boost with a modern website
             <br />
             From a clean frontend to a solid backend , I got you covered
           </p>

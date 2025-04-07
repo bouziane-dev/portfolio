@@ -14,7 +14,7 @@ const Projects = () => {
             key={project.id}
             title={project.title}
             shortDescription={project.shortDescription}
-            imgUrl={project.image}
+            imgUrl={project.images[0]}
             slug={project.slug}
           />
         ))}

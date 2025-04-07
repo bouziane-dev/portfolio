@@ -1,4 +1,3 @@
-'use client'
 import React from 'react'
 import Button from './button'
 import GithubButton from './githubButton'
@@ -6,8 +5,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const Card = ({ title, shortDescription, imgUrl, slug }) => {
-  console.log(title)
-
   return (
     <div className='mx-2 my-4 flex w-full flex-col rounded-2xl border border-purple p-6 md:w-full lg:max-w-[400px] xl:max-w-none'>
       <div className='relative h-52 w-full overflow-hidden rounded-t-lg'>

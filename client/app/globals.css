@@ -39,12 +39,16 @@ body {
   animation: glowEffect 4s infinite alternate;
 }
 
-@media (min-width: 1024px) {
+.glow-effect {
+  filter: drop-shadow(0 0 8px #00ffcc);
+}
+
+/* @media (min-width: 1024px) {
   html {
     padding-left: 5rem;
     padding-right: 5rem;
   }
-}
+} */
 
 @media (min-width: 1024px) and (max-width: 1200px) {
   #desktop-hero-text {
