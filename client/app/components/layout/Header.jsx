@@ -97,7 +97,7 @@ const Header = () => {
               <li>
                 <a
                   href='#projects'
-                  className='text-sm font-medium duration-300 hover:text-purple'
+                  className='text-base font-medium duration-300 hover:text-purple'
                 >
                   Projects
                 </a>
@@ -105,7 +105,7 @@ const Header = () => {
               <li>
                 <a
                   href='#tech'
-                  className='text-sm font-medium duration-300 hover:text-purple'
+                  className='text-base font-medium duration-300 hover:text-purple'
                 >
                   Technologies
                 </a>
@@ -113,7 +113,7 @@ const Header = () => {
               <li>
                 <a
                   href='#about'
-                  className='text-sm font-medium duration-300 hover:text-purple'
+                  className='text-base font-medium duration-300 hover:text-purple'
                 >
                   About me
                 </a>
@@ -121,42 +121,31 @@ const Header = () => {
             </ul>
 
             {/* Social Media Icons - Desktop */}
-            <div className='bg-dark flex space-x-4'>
+
+            <div className='hidden space-x-4 md:flex'>
               <a
                 href='https://www.linkedin.com/in/bouziane-abderahim-dev/'
-                className='text-white'
                 target='_blank'
                 rel='noopener noreferrer'
+                className='group text-white transition-transform duration-300 hover:scale-110 hover:text-purple hover:drop-shadow-[0_0_10px_#13ADC7] active:text-[#0a6c85]'
               >
-                <FontAwesomeIcon
-                  icon={faLinkedin}
-                  size='xl'
-                  className='transition duration-200 hover:text-purple hover:drop-shadow-[0_0_10px_#13ADC7] active:text-[#0a6c85]'
-                />
+                <FontAwesomeIcon icon={faLinkedin} size='xl' />
               </a>
               <a
                 href='https://github.com/bouziane-dev'
-                className='text-white'
                 target='_blank'
                 rel='noopener noreferrer'
+                className='group text-white transition-transform duration-300 hover:scale-110 hover:text-purple hover:drop-shadow-[0_0_10px_#13ADC7] active:text-[#0a6c85]'
               >
-                <FontAwesomeIcon
-                  icon={faGithub}
-                  size='xl'
-                  className='transition duration-200 hover:text-purple hover:drop-shadow-[0_0_10px_#13ADC7] active:text-[#0a6c85]'
-                />
+                <FontAwesomeIcon icon={faGithub} size='xl' />
               </a>
               <a
                 href='https://www.instagram.com/bouzi_codes/'
-                className='text-white'
                 target='_blank'
                 rel='noopener noreferrer'
+                className='group text-white transition-transform duration-300 hover:scale-110 hover:text-purple hover:drop-shadow-[0_0_10px_#13ADC7] active:text-[#0a6c85]'
               >
-                <FontAwesomeIcon
-                  icon={faInstagram}
-                  size='xl'
-                  className='transition duration-200 hover:text-purple hover:drop-shadow-[0_0_10px_#13ADC7] active:text-[#0a6c85]'
-                />
+                <FontAwesomeIcon icon={faInstagram} size='xl' />
               </a>
             </div>
           </div>

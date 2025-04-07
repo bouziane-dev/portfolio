@@ -30,13 +30,13 @@ const Hero = () => {
             id='ellipse'
             src='Hero-ellipse.svg'
             alt='ellipse'
-            className='absolute left-[-60px] z-0 h-80 w-80'
+            className='animate-pulseScale absolute left-[-60px] z-0 h-80 w-80'
           ></img>
           <img
             id='circle'
             src='Hero-circle.svg'
             alt='circle'
-            className='absolute left-36 top-20 z-20 h-44 w-44'
+            className='animate-pulseScale absolute left-36 top-20 z-20 h-44 w-44'
           ></img>
           <Button
             text={'Download CV'}
@@ -48,7 +48,7 @@ const Hero = () => {
       {/* Desktop layout */}
       <div className='relative hidden w-full items-center justify-between px-12 md:flex'>
         <div id='hero-text' className='relative z-10 mt-14 flex-1'>
-          <h2 className='my-6 text-4xl/relaxed font-semibold text-white lg:text-[40px]/relaxed'>
+          <h2 className='my-6 text-5xl/relaxed font-semibold text-white lg:text-[40px]/relaxed'>
             <span className='animate-gradient bg-gradient-to-r from-blue via-purple to-violet bg-200% bg-clip-text text-transparent'>
               Hello, I'm Rahim,
             </span>
@@ -72,12 +72,12 @@ const Hero = () => {
           <img
             src='Hero-ellipse.svg'
             alt='ellipse'
-            className='absolute -right-16 top-20 z-0 h-[24rem] w-[40rem]'
+            className='animate-pulseScale absolute -right-16 top-20 z-0 h-[24rem] w-[40rem]'
           />
           <img
             src='Hero-circle.svg'
             alt='circle'
-            className='z-5 absolute right-0 top-48 h-48 w-48'
+            className='z-5 animate-pulseScale absolute right-0 top-48 h-48 w-48'
           />
           <img
             src='images/avatar.png'

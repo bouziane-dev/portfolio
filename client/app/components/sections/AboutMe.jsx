@@ -43,7 +43,7 @@ const AboutMe = () => {
         {/* Vertical Timeline for Mobile */}
         <div className='relative flex flex-col space-y-6 md:hidden'>
           {/* Timeline Line */}
-          <div className='absolute left-[7px] top-0 mt-[30px] h-3/4 w-[2px] bg-white'></div>
+          <div className='absolute left-[7px] top-0 mt-[30px] h-[80%] w-[2px] bg-white'></div>
 
           {events.map((event, index) => (
             <div key={index} className='relative flex items-start'>

@@ -26,10 +26,15 @@ module.exports = {
           '0%': { backgroundPosition: '0% 50%' },
           '50%': { backgroundPosition: '100% 50%' },
           '100%': { backgroundPosition: '0% 50%' }
+        },
+        pulseScale: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.1)' }
         }
       },
       animation: {
-        gradient: 'gradientFlow 3s infinite linear'
+        gradient: 'gradientFlow 3s infinite linear',
+        pulseScale: 'pulseScale 3s ease-in-out infinite'
       }
     },
     container: {
