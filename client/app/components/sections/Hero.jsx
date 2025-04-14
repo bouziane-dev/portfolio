@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import Button from '../ui/button'
+import Button from '@/app/components/ui/Button'
 
 const Hero = () => {
   const handleDownload = () => {

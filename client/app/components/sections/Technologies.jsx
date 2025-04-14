@@ -1,5 +1,5 @@
 import React from 'react'
-import IconSVG from '../ui/iconSVG'
+import IconSVG from '@/app/components/ui/IconSVG'
 import techStack from '@/app/data/techStack'
 
 const Technologies = () => {
