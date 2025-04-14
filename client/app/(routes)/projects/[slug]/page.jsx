@@ -2,8 +2,8 @@
 
 import Image from 'next/image'
 import projects from '../../../data/projects'
-import IconSVG from '@/app/components/ui/iconSVG'
-import techStack from '@/app/data/techStack'
+import IconSVG from '../../../components/ui/iconSVG'
+import techStack from '../../../data/techStack'
 import Link from 'next/link'
 import { useState } from 'react'
 import Lightbox from '@seafile/react-image-lightbox'
