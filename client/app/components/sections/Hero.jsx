@@ -1,7 +1,17 @@
+'use client'
+
 import React from 'react'
 import Button from '../ui/button'
 
 const Hero = () => {
+  const handleDownload = () => {
+    const link = document.createElement('a')
+    link.href = '/Bouziane_CV.pdf'
+    link.download = 'Bouziane_CV.pdf'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
   return (
     <section id='hero' className='relative mb-12 pt-[80px] md:mb-24 md:pt-16'>
       {/* Mobile layout */}
@@ -9,14 +19,14 @@ const Hero = () => {
         <div id='hero-text' className='mb-8 px-12'>
           <h2 className='my-4 text-2xl font-semibold text-white'>
             <span className='animate-gradient bg-gradient-to-r from-blue via-purple to-violet bg-200% bg-clip-text text-transparent'>
-              Hello, I'm Rahim,
+              Hello, I'm Bouzi,
             </span>{' '}
             <br></br>A Web Developer
           </h2>
           <p className='spacing text-sm/relaxed text-lightgray'>
-            Former digital-marketing specialist, seeking to apply competent
-            development skills with focus on collaboration, communication,
-            and passion
+            You need more than just a good looking website, you need speed,
+            scalability and a great user experience. Luckily, that's exactly
+            what I do !
           </p>
         </div>
         <div id='hero-image' className='relative'>
@@ -30,17 +40,18 @@ const Hero = () => {
             id='ellipse'
             src='Hero-ellipse.svg'
             alt='ellipse'
-            className='animate-pulseScale absolute left-[-60px] z-0 h-80 w-80'
+            className='absolute left-[-60px] z-0 h-80 w-80 animate-pulseScale'
           ></img>
           <img
             id='circle'
             src='Hero-circle.svg'
             alt='circle'
-            className='animate-pulseScale absolute left-36 top-20 z-20 h-44 w-44'
+            className='absolute left-36 top-20 z-20 h-44 w-44 animate-pulseScale'
           ></img>
           <Button
             text={'Download CV'}
             className={'absolute left-12 top-56 z-40'}
+            onClick={handleDownload}
           />
         </div>
       </div>
@@ -50,7 +61,7 @@ const Hero = () => {
         <div id='hero-text' className='relative z-10 mt-14 flex-1'>
           <h2 className='my-6 text-5xl/relaxed font-semibold text-white lg:text-[40px]/relaxed'>
             <span className='animate-gradient bg-gradient-to-r from-blue via-purple to-violet bg-200% bg-clip-text text-transparent'>
-              Hello, I'm Rahim,
+              Hello, I'm Bouzi,
             </span>
             <br />A Web Developer
           </h2>
@@ -58,11 +69,16 @@ const Hero = () => {
             id='desktop-hero-text'
             className='my-6 text-sm text-lightgray md:w-[25rem] lg:w-auto lg:text-base'
           >
-            Giving your online presence a boost with a modern website
+            You need more than just a good looking website
             <br />
-            From a clean frontend to a solid backend , I got you covered
+            You need speed , scalability and a great user experience <br />
+            Luckily, that's exactly what I do !
           </p>
-          <Button text='Download CV' className='my-6' />
+          <Button
+            text='Download CV'
+            className='my-6'
+            onClick={handleDownload}
+          />
         </div>
 
         <div
@@ -72,12 +88,12 @@ const Hero = () => {
           <img
             src='Hero-ellipse.svg'
             alt='ellipse'
-            className='animate-pulseScale absolute -right-16 top-20 z-0 h-[24rem] w-[40rem]'
+            className='absolute -right-16 top-20 z-0 h-[24rem] w-[40rem] animate-pulseScale'
           />
           <img
             src='Hero-circle.svg'
             alt='circle'
-            className='z-5 animate-pulseScale absolute right-0 top-48 h-48 w-48'
+            className='z-5 absolute right-0 top-48 h-48 w-48 animate-pulseScale'
           />
           <img
             src='images/avatar.png'
