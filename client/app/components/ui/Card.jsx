@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from './Button'
-import GithubButton from './githubButton'
+import GithubButton from './GithubButton'
 import Image from 'next/image'
 import Link from 'next/link'
 
