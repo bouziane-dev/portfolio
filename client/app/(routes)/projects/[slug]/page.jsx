@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import projects from '../../../data/projects'
+import projects from '@/app/data/projects'
 import IconSVG from '@/app/components/ui/IconSVG'
 import techStack from '@/app/data/techStack'
 import Link from 'next/link'
