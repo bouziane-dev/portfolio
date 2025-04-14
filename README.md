@@ -8,11 +8,10 @@ A modern portfolio built with Next.js and Tailwind CSS to showcase my work as a 
 ## 📌 Features
 ✅ Fully responsive  
 ✅ Interactive animations  
-✅ Dark/light mode  
 ✅ SEO optimized  
 
 ## 🛠 Tech Stack
-- **Frontend:** Next.js, Tailwind CSS, Framer Motion  
+- **Frontend:** Next.js, Tailwind CSS
 - **Deployment:** Vercel  
 
 ## 📖 Setup Instructions
