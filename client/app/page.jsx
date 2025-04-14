@@ -1,10 +1,10 @@
 import React from 'react'
-import Header from './components/layout/header'
-import Hero from './components/sections/hero'
-import Projects from './components/sections/projects'
-import Technologies from './components/sections/technologies'
-import AboutMe from './components/sections/aboutMe'
-import Footer from './components/layout/footer'
+import Header from '@/app/components/layout/Header'
+import Hero from '@/app/components/sections/Hero'
+import Projects from '@/app/components/sections/Projects'
+import Technologies from '@/app/components/sections/Technologies'
+import AboutMe from '@/app/components/sections/AboutMe'
+import Footer from '@/app/components/layout/Footer'
 
 const page = () => {
   return (
