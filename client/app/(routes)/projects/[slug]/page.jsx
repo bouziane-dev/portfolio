@@ -75,7 +75,7 @@ const ProjectDetails = ({ params }) => {
 
             return (
               <div
-                key={tech.name}
+                key={tech.index}
                 className={`rounded-md p-2 transition duration-300 ${
                   isUsed
                     ? 'glow-effect hover:scale-110'

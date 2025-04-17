@@ -11,6 +11,7 @@ const Technologies = () => {
       <div className='grid grid-cols-3 gap-3 md:grid-cols-6'>
         {techStack.map(technology => (
           <IconSVG
+            key={technology.index}
             pathData={technology.pathData}
             text={technology.name}
             viewBox={technology.viewBox}

@@ -30,12 +30,17 @@ const Hero = () => {
           </p>
         </div>
         <div id='hero-image' className='relative'>
-          <img
+          <div
             id='avatar'
-            src='images/avatar.png'
-            alt='avatar'
-            className='absolute left-6 top-[-28px] z-30 h-64 w-64'
-          ></img>
+            className='border-1 absolute left-20 top-[-10px] z-30 h-44 w-44 overflow-hidden rounded-full border-4 border-purple'
+          >
+            <img
+              src='images/avatar-me.jpg'
+              alt='avatar'
+              className='h-full w-full object-cover'
+            />
+          </div>
+
           <img
             id='ellipse'
             src='Hero-ellipse.svg'
@@ -49,6 +54,7 @@ const Hero = () => {
             className='absolute left-36 top-20 z-20 h-44 w-44 animate-pulseScale'
           ></img>
           <Button
+            id='download-btn'
             text={'Download CV'}
             className={'absolute left-12 top-56 z-40'}
             onClick={handleDownload}
@@ -59,7 +65,7 @@ const Hero = () => {
       {/* Desktop layout */}
       <div className='relative hidden w-full items-center justify-between px-12 md:flex'>
         <div id='hero-text' className='relative z-10 mt-14 flex-1'>
-          <h2 className='my-6 text-5xl/relaxed font-semibold text-white lg:text-[40px]/relaxed'>
+          <h2 className='my-6 text-4xl/relaxed font-semibold text-white lg:text-[40px]/relaxed'>
             <span className='animate-gradient bg-gradient-to-r from-blue via-purple to-violet bg-200% bg-clip-text text-transparent'>
               Hello, I'm Bouzi,
             </span>
@@ -95,11 +101,16 @@ const Hero = () => {
             alt='circle'
             className='z-5 absolute right-0 top-48 h-48 w-48 animate-pulseScale'
           />
-          <img
-            src='images/avatar.png'
-            alt='avatar'
-            className='absolute right-10 top-12 z-10 h-80 w-80'
-          />
+          <div
+            id='avatar'
+            className='border-1 absolute right-14 top-16 z-10 h-60 w-60 overflow-hidden rounded-full border-4 border-purple'
+          >
+            <img
+              src='images/avatar-me.jpg'
+              alt='avatar'
+              className='h-full w-full object-cover'
+            />
+          </div>
         </div>
       </div>
     </section>

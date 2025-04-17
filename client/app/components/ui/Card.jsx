@@ -1,10 +1,10 @@
 import React from 'react'
 import Button from './Button'
-import GithubButton from './githubButton'
+import GithubButton from './GithubButton'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const Card = ({ title, shortDescription, imgUrl, slug }) => {
+const Card = ({ title, shortDescription, imgUrl, slug, repoUrl }) => {
   return (
     <div className='group mx-2 my-4 flex w-full flex-col rounded-2xl border border-white/20 bg-transparent p-6 transition-all duration-300 hover:-translate-y-1 hover:border-transparent hover:bg-white/5 md:w-full lg:max-w-[400px] xl:max-w-none'>
       <div className='relative h-52 w-full overflow-hidden rounded-t-lg'>
@@ -29,7 +29,9 @@ const Card = ({ title, shortDescription, imgUrl, slug }) => {
           <Button className='w-full px-4 md:px-8' text='View more' />
         </Link>
         <div className='w-full'>
-          <GithubButton />
+          <Link href={repoUrl} target='_blank'>
+            <GithubButton />
+          </Link>
         </div>
       </div>
     </div>

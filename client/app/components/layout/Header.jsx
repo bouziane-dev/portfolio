@@ -14,7 +14,7 @@ const Header = () => {
           {/* Mobile Layout (Row 1): Logo & Socials */}
           <div className='flex items-center justify-between md:hidden'>
             <a href='#' className='text-2xl font-bold text-white'>
-              MyPortfolio
+              Bouzi Codes
             </a>
 
             {/* Social Media Icons - Mobile */}
@@ -88,8 +88,11 @@ const Header = () => {
 
           {/* Desktop Layout: Inline Logo - Nav Links - Socials */}
           <div className='hidden items-center justify-between md:flex xl:mx-10'>
-            <a href='#' className='text-2xl font-bold text-white'>
-              MyPortfolio
+            <a
+              href='#'
+              className='flex flex-row text-2xl font-semibold text-white'
+            >
+              Bouzi Codes
             </a>
 
             {/* Nav Links */}
