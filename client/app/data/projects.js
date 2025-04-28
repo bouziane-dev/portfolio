@@ -68,6 +68,32 @@ const projects = [
         'I was quite new to admin panels at the point when I worked on this project so it was a bit challenging to learn a new concept and implement it right away, I think I did good.'
     },
     repoUrl: 'https://github.com/bouziane-dev/rk-shop'
+  },
+
+  {
+    id: 3,
+    slug: 'redstore',
+    title: 'RedStore E-commerce',
+    type: 'Frontend Project',
+    shortDescription:
+      'A small static front-end project for an eCommerce website. Built with basic web technologies.',
+    images: [
+      '/images/redstore/image1.png',
+      '/images/redstore/image2.png',
+      '/images/redstore/image3.png',
+      '/images/redstore/image4.png',
+      '/images/redstore/image5.png',
+      '/images/redstore/image6.png'
+    ],
+    technologies: ['HTML', 'CSS'],
+    details: {
+      about:
+        'I built this small project to practice manipulating layout, focusing on product listings and a basic shopping experience (front-end only).',
+      role: 'I built the front-end structure using HTML and CSS, based on a simple layout I got from youtube.',
+      challenges:
+        'At the time I worked on this project, I was just starting out with web development, so structuring the layout and styling it was a new challenge for me back then.'
+    },
+    repoUrl: 'https://github.com/bouziane-dev/redstore-ecommerce'
   }
 ]
 
