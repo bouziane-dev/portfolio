@@ -6,8 +6,8 @@ import Button from '@/app/components/ui/Button'
 const Hero = () => {
   const handleDownload = () => {
     const link = document.createElement('a')
-    link.href = '/Bouziane_CV.pdf'
-    link.download = 'Bouziane_CV.pdf'
+    link.href = '/Abderahim-CV.pdf'
+    link.download = 'Abderahim-CV.pdf'
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
